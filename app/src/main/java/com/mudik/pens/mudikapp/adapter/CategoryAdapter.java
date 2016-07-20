@@ -50,10 +50,10 @@ public class CategoryAdapter  extends ArrayAdapter<String> {
         TextView textView = (TextView) row.findViewById(R.id.catlist_label_nama);
         textView.setText(contentArray[position]);
 
-        ImageView imageView = (ImageView)row.findViewById(R.id.catlist_img_icon);
-        int color = Color.parseColor("#009688"); //The color u want
-        imageView.setColorFilter(color);
-        imageView.setImageResource(imageArray[position]);
+//        ImageView imageView = (ImageView)row.findViewById(R.id.catlist_img_icon);
+//        int color = Color.parseColor("#009688"); //The color u want
+//        imageView.setColorFilter(color);
+//        imageView.setImageResource(imageArray[position]);
 
         return row;
     }

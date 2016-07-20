@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -62,12 +63,14 @@ public class MediaAdapter extends ArrayAdapter<Media> {
         Media data1 = mediaList.get(position);
         //Media data1 = mediaList.get(position);
         if (null != data1) {
-            TextView pNama = (TextView) view.findViewById(R.id.medialist_label_nama);
-            //TextView pDetail = (TextView) view.findViewById(R.id.buttonlist_label_detail);
-            VideoView vidview = (VideoView) view.findViewById(R.id.video);
+            TextView mNama = (TextView) view.findViewById(R.id.medialist_label_nama);
+            TextView mCat = (TextView) view.findViewById(R.id.medialist_label_kategori);
+            TextView mid = (TextView) view.findViewById(R.id.media_id);
 
-            pNama.setText(data1.m_name);
-            vidview.setVideoURI(Uri.parse(data1.vid));
+            mNama.setText(data1.m_name);
+            mCat.setText(data1.m_cat);
+            mid.setText(data1.m_konten);
+
 
         }
 

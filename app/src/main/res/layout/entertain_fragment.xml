@@ -7,11 +7,19 @@
     android:padding="4dp">
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/buttonrep"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_weight="0.95"
         android:scrollIndicators="right">
 
 

@@ -74,7 +74,7 @@ public class PrayScheduleFragment extends android.support.v4.app.Fragment {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 int index = spinnerTempat.getSelectedItemPosition();
                 urlplace[0] = tempatArray[index];
-                Toast.makeText(getActivity(), "urlplace: "+ urlplace[0], Toast.LENGTH_LONG).show();
+                //Toast.makeText(getActivity(), "urlplace: "+ urlplace[0], Toast.LENGTH_LONG).show();
                 // Instantiate the RequestQueue.
                 RequestQueue queue = Volley.newRequestQueue(getActivity());
                 // String url ="http://api.aladhan.com/timingsByCity?city=Surabaya&country=ID&method=1";
